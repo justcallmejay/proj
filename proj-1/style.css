@@ -1,0 +1,456 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+    font: white, Georgia, 'Times New Roman', Times, serif;
+    background: url("./img/journal-1428424_960_720.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible;
+    top: 1%;
+    left: 600px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+}
+
+#goal, #time, #text {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+    position: relative;
+}
+
+#goal {
+    padding: 0;
+    width: 400px;
+    height: 40px;
+    left: 5px;
+}
+
+#time {
+    width: 400px;
+    height: 40px;
+    left: 5px;
+}
+
+#text {
+    width: 400px;
+    height: 290px;
+    top: 44%;
+    left: 5px;
+}
+
+#option {
+    top: 37%;
+}
+
+#next {
+    top: 88%;
+    left: 400px;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    position: absolute;
+}
+
+#form2 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    top: 1%;
+    left: 600px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+}
+
+#form2 div h3 {
+    top: 1%;
+    left: 10px;
+    position: relative;
+}
+
+#submitMonths {
+    top: 88%;
+    left: 400px;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    position: absolute;
+}
+
+#monthly {
+    visibility: hidden;
+    width: 400px;
+    height: 40px;
+    left: 5px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+}
+
+
+#monthly2 {
+    visibility: hidden;
+    width: 400px;
+    height: 40px;
+    left: 5px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+}
+
+#monthly3 {
+    visibility: hidden;
+    width: 400px;
+    height: 40px;
+    left: 5px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+}
+
+#firMon, #secMon, #thiMon {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    visibility: hidden;
+}
+
+#backGoal {
+    top: 88%;
+    left: 40px;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    position: absolute;
+}
+
+
+#form3 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    justify-content: center;
+    flex-direction: column;
+    top: 1%;
+    left: 600px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    width: 500px;
+    height: 80%;
+    border-radius: 15px;
+    
+}
+
+#month1, #month2, #month3 {
+    top: 20px;
+    left: 15px;
+    position: relative;
+}
+
+#mon1wk1, #mon2wk1, #mon3wk1,
+#mon1wk2, #mon1wk3, #mon1wk4, #mon2wk2, #mon2wk3, #mon2wk4, 
+#mon3wk2, #mon3wk3, #mon3wk4, #mon4wk2, #mon4wk3, #mon4wk4  {
+    visibility: hidden;
+    width: 400px;
+    height: 30px;
+    left: 5px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+}
+
+#addwk1 {
+    left: .5%;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    font-size: 18px;
+    position:relative;
+    display: none;
+}
+
+#addwk2 {
+    left: .5%;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    font-size: 18px;
+    position:relative;
+    display: none;
+}
+
+#addwk3 {
+    left: .5%;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    font-size: 18px;
+    position:relative;
+    display: none;
+}
+
+.append {
+    width: 400px;
+    height: 30px;
+    left: 5px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 60%);
+}
+
+#submitWeeks {
+    top: 8%;
+    left: 40%;
+    margin: 5px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 10%);
+    position: relative;
+}
+
+
+
+
+
+#form4 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    top: 30px;
+    left: 100px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#form4 h3 {
+    font-size: 24px;
+}
+
+#goalResult, #textResult, #timeResult {
+    font-size: 20px;
+}
+
+#form5 {
+    display: inline-block;
+    top: 350px;
+    left: 100px;
+    height: 400px;
+    width: 1200px;  
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#form5 h3, h5 {
+    font-size: 20px;
+}
+
+#month1Result, #month2Result, #month3Result {
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+#goalResult {
+    margin-bottom: 40px;
+}
+
+#column1, #column2, #column3 {
+    float: left;
+    width: 33.33%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#mon1, #mon2, #mon3 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#mon1week0, #mon1week1, #mon1week2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#mon2week0, #mon2week1, #mon2week2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#mon3week0, #mon3week1, #mon3week2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#column12, #column22, #column32 {
+    float: left;
+    width: 33.33%;
+  }
+  
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #one, #two, #three {
+    left: 10%;
+    top: 500px;
+    font-size: 18px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .container {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    top: 30px;
+    left: 620px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 40%);
+    align-content: center;
+    width: 680px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#m1box1, #m1box2, #m1box3, #m1box4 {
+    left: 80px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+#m1box1 {
+    top: 250px;
+}
+
+#m1box2 {
+    top: 200px;
+}
+
+#m1box3 {
+    top: 150px;
+}
+
+#m1box4 {
+    top: 100px;
+}
+
+#m2box1, #m2box2, #m2box3, #m2box4 {
+    left: 300px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+#m2box1 {
+    top: 250px;
+}
+
+#m2box2 {
+    top: 200px;
+}
+
+#m2box3 {
+    top: 150px;
+}
+
+#m2box4 {
+    top: 100px;
+}
+
+#m3box1, #m3box2, #m3box3, #m3box4 {
+    left: 520px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+#m3box1 {
+    top: 250px;
+}
+
+#m3box2 {
+    top: 200px;
+}
+
+#m3box3 {
+    top: 150px;
+}
+
+#m3box4 {
+    top: 100px;
+}
+
+#fstMo, #sndMo, #trdMo {
+    top: 30px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+}
+
+#fstMo {
+
+    left: 80px;
+}
+
+#sndMo {
+    left: 300px;
+}
+
+#trdMo {
+    left: 520px;
+}

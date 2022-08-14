@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <link rel = "stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="form">
+    <form id="form" method="POST">
+        <h1>Welcome</h1>
+        <h3>What is your long term goal?</h3>
+        <input type="text" id="goal" placeholder="Enter goal">
+
+        <h3>How long do you this this goal will take you?</h3>
+        <select id="time" type="select" aria-label="time" >
+            <option value=""></option>
+            <option value="3 Months">3 Months</option>
+            <option value="2 Months">2 Months</option>
+            <option value="1 Month">1 Month</option>
+        </select>
+
+    <div>
+         <h3 id="option">(Optional) Add details:</h3> 
+    </div>
+    <div><textarea type="text" id="text" aria-labelledby="details"></textarea></div>
+    <button id="next" type="button">Next</button>
+    </form>
+</div>
+    
+<div class="form">
+    <form id="form2">
+        <h3 id="newMonth"></h3>
+        <h3 id="firMon">First month goal:</h3>
+            <input type="text" id="monthly" placeholder="1st Month">
+        
+        <h3 id="secMon">Second month goal:</h3>
+            <input type="text" id="monthly2" placeholder="2nd Month">
+        
+        <h3 id ="thiMon">Third month goal:</h3>
+            <input type="text" id="monthly3" placeholder="3rd Month">
+        
+            <button id="submitMonths" type="button">Next</button>
+    </form>
+</div>
+
+<div class="form">
+    <form id="form3">
+        <h2 id="month1"></h3>
+            <input type="text" id="mon1wk1" placeholder="1st Week" >
+            <input type="text" id="mon1wk2" placeholder="2nd Week">
+            <input type="text" id="mon1wk3" placeholder="3rd Week">
+            <input type="text" id="mon1wk4" placeholder="4th Week">
+        <div id="forma"></div>
+
+        <h2 id="month2"></h3>
+            <input type="text" id="mon2wk1" placeholder="1st Week">
+            <input type="text" id="mon2wk2" placeholder="2nd Week">
+            <input type="text" id="mon2wk3" placeholder="3rd Week">
+            <input type="text" id="mon2wk4" placeholder="4th Week">
+        <div id="forma2"></div>
+
+        <h2 id="month3"></h3>
+            <input type="text" id="mon3wk1" placeholder="1st Week">
+            <input type="text" id="mon3wk2" placeholder="2nd Week">
+            <input type="text" id="mon3wk3" placeholder="3rd Week">
+            <input type="text" id="mon3wk4" placeholder="4th Week">
+        <div id="forma3"></div>
+
+            <button type="submit" id="submitWeeks">Continue</button>
+    </form>
+</div>
+    <form id="form4">
+        <h3>Your goal:</h3>
+        <div><a id="goalResult"></a></div>
+        <div><a id="textResult"></a></div>
+        <div><a id="timeResult"></a></div>
+    </form>
+    <form id="form5">
+    <h3>Your monthly goals:</h3>
+    <div class="row2">
+            <div id="column1">
+                <h5>First Month:</h5>
+                <a id="month1Result"></a>
+                <div>
+                <a id="mon1"></a><input type="checkbox" id="mo1">
+                </div>
+            </div>
+            <div id="column2">
+                <h5 id="sndh5">Second Month:</h5>
+                <a id="month2Result"></a>
+                <div>
+                <a id="mon2"></a>
+                </div>
+            </div>
+            <div id="column3">
+                <h5 id="trdh5">Third Month:</h5>
+                <a id="month3Result"></a>
+                <div>
+                <a id="mon3"></a>
+                </div>
+                <div class="mon3wk"></div>
+                <div class="mon3wk"></div>
+                <div class="mon3wk"></div>
+            </div>
+    </div>
+    </form>
+    <div class="container">
+        <div id="fstMo">First Month</div>
+        <div id="m1box1"></div>
+        <div id="m1box2"></div>
+        <div id="m1box3"></div>
+        <div id="m1box4"></div>
+
+        <div id="sndMo">Second Month</div>
+        <div id="m2box1"></div>
+        <div id="m2box2"></div>
+        <div id="m2box3"></div>
+        <div id="m2box4"></div>
+        
+        <div id="trdMo">Third Month</div>
+        <div id="m3box1"></div>
+        <div id="m3box2"></div>
+        <div id="m3box3"></div>
+        <div id="m3box4"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
