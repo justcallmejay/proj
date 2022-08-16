@@ -1,33 +1,4 @@
 {
   "users": [
-    {
-      "goal": "Be more active",
-      "time": "3 Months",
-      "text": "",
-      "month": {
-        "firstMonth": {
-          "Month1": "Go to the gym 2x a week",
-          "Week1": "Go to the gym 2x a week for 30 minutes",
-          "Week2": "Go to the gym 2x a week for 30 minutes",
-          "Week3": "Go to the gym 1x a week for 30 minutes",
-          "Week4": "Go to the gym 3x a week for 30 minutes"
-        },
-        "secondMonth": {
-          "Month2": "Go to the gym 3x a week",
-          "Week1": "Go to the gym 3x a week for 30 minutes",
-          "Week2": "Go to the gym 3x a week for 30 minutes",
-          "Week3": "Go to the gym 2x a week for 30 minutes",
-          "Week4": "Go to the gym 4x a week for 30 minutes"
-        },
-        "thirdMonth": {
-          "Month3": "Go to the gym 4x a week",
-          "Week1": "Go to the gym 4x a week for 30 minutes",
-          "Week2": "Go to the gym 4x a week for 30 minutes",
-          "Week3": "Go to the gym 4x a week for 30 minutes",
-          "Week4": "Go to the gym 4x a week for 30 minutes"
-        }
-      },
-      "id": 1
-    }
   ]
 }
