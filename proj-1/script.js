@@ -1,3 +1,11 @@
+fetch('http://localhost:3000/users/1', {
+    method: "DELETE",
+    headers: {
+        "Content-Type" : "application/json",
+        "Accept" : "application/json"
+    }
+})
+
 let body = document.querySelector('body')
 
 let form = document.querySelector('#form')
@@ -46,7 +54,6 @@ let thiMon = document.getElementById('thiMon')
 let form4 = document.querySelector('#form4')
 let form5 = document.querySelector('#form5')
 let container = document.querySelector('.container')
-
 
 
 
@@ -173,27 +180,9 @@ next.addEventListener('click', (e) => {
 
 
 let pushMonths = {
-    firstMonth: {
-        Month1: "", 
-        Week1: "",
-        Week2: "",
-        Week3: "",
-        Week4: "",
-    },
-    secondMonth: {
-        Month2: "",
-        Week1: "",
-        Week2: "",
-        Week3: "",
-        Week4: "",
-    },
-    thirdMonth: {
-        Month3: "",
-        Week1: "",
-        Week2: "",
-        Week3: "",
-        Week4: "",
-    }
+    firstMonth: {Month1: "", Week1: "", Week2: "", Week3: "", Week4: ""},
+    secondMonth: {Month2: "", Week1: "", Week2: "", Week3: "", Week4: ""},
+    thirdMonth: {Month3: "", Week1: "", Week2: "", Week3: "", Week4: ""}
 };
 
 
@@ -282,10 +271,7 @@ function submitMonth(e) {
     }
 
     let monthData = (
-        pushMonths.firstMonth.Month1 = x.value,
-        pushMonths.secondMonth.Month2 = y.value, 
-        pushMonths.thirdMonth.Month3 = z.value
-        )
+        pushMonths.firstMonth.Month1 = x.value, pushMonths.secondMonth.Month2 = y.value, pushMonths.thirdMonth.Month3 = z.value)
 
     return monthData
     };
@@ -408,14 +394,14 @@ function submitWeek(e) {
         
         fetch('http://localhost:3000/users', dataObj)
         .then(res => res.json())
-        .then(data => data)
+        .then(data => renderData(data))
         }
         submitData(goal.value, time.value, text.value, pushMonths)
 
 
 
-
-    fetch('http://localhost:3000/users')
+    function renderData(data) {
+    fetch('http://localhost:3000/users/')
     .then(res => res.json())
     .then(data => {
 
@@ -447,7 +433,6 @@ data.map(name => {
 
         let mon1wk1 = word.month.firstMonth.Week1
 
-
         mon1.textContent = mon1wk1
     })
 
@@ -455,12 +440,6 @@ data.map(name => {
 //Creating a bar graph when a checkbox for month 1 is clicked//
 
     data.map(ti => {
-
-        let mon1wks = [
-            ti.month.firstMonth.Week2, 
-            ti.month.firstMonth.Week3, 
-            ti.month.firstMonth.Week4
-        ]
 
 //time conditions for textContent 
 
@@ -486,6 +465,8 @@ data.map(name => {
             }
 
 //Creating a bar graph when a checkbox for month 1 is clicked//
+
+        let mon1wks = [ti.month.firstMonth.Week2, ti.month.firstMonth.Week3, ti.month.firstMonth.Week4]
 
         mon1wks.map((wks, i) => {
             let x = document.createElement("INPUT")
@@ -538,12 +519,7 @@ data.map(name => {
                 }
             })
 
-        let mon2wks = [
-            ti.month.secondMonth.Week1,
-            ti.month.secondMonth.Week2, 
-            ti.month.secondMonth.Week3, 
-            ti.month.secondMonth.Week4
-        ]
+        let mon2wks = [ti.month.secondMonth.Week1, ti.month.secondMonth.Week2, ti.month.secondMonth.Week3, ti.month.secondMonth.Week4]
 
 
         if (ti.time === '2 Months' || ti.time === '3 Months') {
@@ -611,12 +587,7 @@ data.map(name => {
             })
         }
 
-        let mon3wks = [
-            ti.month.thirdMonth.Week1,
-            ti.month.thirdMonth.Week2, 
-            ti.month.thirdMonth.Week3, 
-            ti.month.thirdMonth.Week4
-        ]
+        let mon3wks = [ti.month.thirdMonth.Week1, ti.month.thirdMonth.Week2, ti.month.thirdMonth.Week3, ti.month.thirdMonth.Week4]
 
         if (ti.time === '3 Months') {
 
@@ -700,13 +671,10 @@ box.addEventListener('change', () => {
     })
 })
 
-
 return monthData  
     
-    
 }
-
+}
 submitWk.addEventListener('click', submitWeek)
-
 
 })
